@@ -11,10 +11,11 @@
 {% block content %}
 {% set k = d.kpi %}
 
-<div class="motivation-card mb-3">
+<div class="motivation-card mb-3" title="Arahkan kursor untuk menghentikan sementara">
     <i class="bi bi-quote"></i>
-    {{ d.motivation }}
-    {% if d.motivation_author %}<small class="text-secondary ms-1">— {{ d.motivation_author }}</small>{% endif %}
+    <div class="marquee">
+        <span class="marquee-track">{{ d.motivation }}{% if d.motivation_author %} <small class="text-secondary ms-1">— {{ d.motivation_author }}</small>{% endif %}</span>
+    </div>
 </div>
 
 {% set kpis = [
@@ -47,7 +48,7 @@
 {# ================= 1. RECRUITMENT & ONBOARDING ================= #}
 <div class="section-title">1. Recruitment &amp; Onboarding</div>
 <div class="row g-3 mb-3">
-    <div class="col-lg-4">
+    <div class="col-md-6 col-xxl-4">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-funnel me-2"></i>Pipeline posisi per stage</div>
             <div class="table-responsive"><table class="table table-sm mb-0">
@@ -62,7 +63,7 @@
             </table></div>
         </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-md-6 col-xxl-3">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-pie-chart me-2"></i>Status posisi</div>
             <ul class="list-group list-group-flush">
@@ -74,7 +75,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-lg-5">
+    <div class="col-12 col-xxl-5">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-person-plus me-2"></i>Karyawan join minggu ini</div>
             {% if d.joiners %}
@@ -166,7 +167,7 @@
 {# ================= 3. GENERAL AFFAIR ================= #}
 <div class="section-title">3. General Affair</div>
 <div class="row g-3 mb-3">
-    <div class="col-lg-4">
+    <div class="col-md-6 col-xxl-4">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-tags me-2"></i>Per kategori</div>
             <div class="table-responsive"><table class="table table-sm mb-0">
@@ -180,7 +181,7 @@
             </table></div>
         </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-md-6 col-xxl-3">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-check2-square me-2"></i>Per status</div>
             <ul class="list-group list-group-flush">
@@ -191,7 +192,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-lg-5">
+    <div class="col-12 col-xxl-5">
         <div class="card h-100">
             <div class="card-header"><i class="bi bi-calendar3 me-2"></i>Per hari</div>
             <div class="table-responsive"><table class="table table-sm mb-0">
@@ -306,4 +307,23 @@
     </table></div>
     {% else %}<div class="card-body text-secondary">Tidak ada issue di minggu ini.</div>{% endif %}
 </div>
+{% endblock %}
+{% block scripts %}
+<script>
+    // Teks motivasi berjalan dengan kecepatan tetap, apa pun panjangnya:
+    // durasi = jarak tempuh / kecepatan. Dihitung ulang saat ukuran layar berubah.
+    (function () {
+        const SPEED = 70;   // px per detik - nyaman dibaca
+        const track = document.querySelector(".marquee-track");
+        if (!track) {
+            return;
+        }
+        function setDuration() {
+            const seconds = Math.max(12, track.scrollWidth / SPEED);
+            track.style.setProperty("--marquee-duration", seconds.toFixed(1) + "s");
+        }
+        setDuration();
+        window.addEventListener("resize", setDuration);
+    })();
+</script>
 {% endblock %}

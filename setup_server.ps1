@@ -117,10 +117,10 @@ if (Test-Path $excel) {
 # ------------------------------------------------------------
 Step "5/6 Firewall port $Port"
 
-if (Get-NetFirewallRule -DisplayName "Weekly Report HRGA" -ErrorAction SilentlyContinue) {
+if (Get-NetFirewallRule -DisplayName "HRGA_Supervisor_Apps" -ErrorAction SilentlyContinue) {
     Write-Host "Rule firewall sudah ada, dilewati."
 } else {
-    New-NetFirewallRule -DisplayName "Weekly Report HRGA" -Direction Inbound -Action Allow `
+    New-NetFirewallRule -DisplayName "HRGA_Supervisor_Apps" -Direction Inbound -Action Allow `
         -Protocol TCP -LocalPort $Port | Out-Null
     Write-Host "Rule firewall dibuat."
 }
