@@ -4,7 +4,7 @@
    ============================================================
 
    Light mode = biru (default). Dark mode = kartu gelap dengan
-   aksen biru juga (BUKAN merah seperti Asset Tracker Simple). Semua override [data-bs-theme="dark"]
+   aksen ungu (warna HRGA, #7C3AED). Semua override [data-bs-theme="dark"]
    ditulis di file ini, BUKAN di <style> template.
 
    Palet baku:
@@ -14,7 +14,7 @@
      - Divider sangat tipis : rgba(255,255,255,0.08)
      - Teks muted : #9aa0ac
      - Teks utama : #f1f3f5 / #e9ecef
-     - Aksen biru : #3b82f6, #2563eb (hover), #1d4ed8 (gradient)
+     - Aksen ungu : #8b5cf6, #7c3aed (hover), #6d28d9 (gradient)
    ============================================================ */
 
 
@@ -23,43 +23,43 @@
    ============================================================ */
 
 :root[data-bs-theme="dark"] {
-    --bs-primary: #3b82f6;
-    --bs-primary-rgb: 59, 130, 246;
-    --bs-primary-text-emphasis: #93c5fd;
-    --bs-primary-bg-subtle: #172554;
-    --bs-primary-border-subtle: #1e3a8a;
-    --bs-link-color: #60a5fa;
-    --bs-link-color-rgb: 96, 165, 250;
-    --bs-link-hover-color: #93c5fd;
-    --bs-link-hover-color-rgb: 147, 197, 253;
+    --bs-primary: #8b5cf6;
+    --bs-primary-rgb: 139, 92, 246;
+    --bs-primary-text-emphasis: #c4b5fd;
+    --bs-primary-bg-subtle: #2e1065;
+    --bs-primary-border-subtle: #4c1d95;
+    --bs-link-color: #a78bfa;
+    --bs-link-color-rgb: 167, 139, 250;
+    --bs-link-hover-color: #c4b5fd;
+    --bs-link-hover-color-rgb: 196, 181, 253;
 }
 
 [data-bs-theme="dark"] .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #3b82f6;
-    --bs-btn-border-color: #3b82f6;
+    --bs-btn-bg: #8b5cf6;
+    --bs-btn-border-color: #8b5cf6;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #2563eb;
-    --bs-btn-hover-border-color: #2563eb;
-    --bs-btn-focus-shadow-rgb: 59, 130, 246;
+    --bs-btn-hover-bg: #7c3aed;
+    --bs-btn-hover-border-color: #7c3aed;
+    --bs-btn-focus-shadow-rgb: 139, 92, 246;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #2563eb;
-    --bs-btn-active-border-color: #2563eb;
+    --bs-btn-active-bg: #7c3aed;
+    --bs-btn-active-border-color: #7c3aed;
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #3b82f6;
-    --bs-btn-disabled-border-color: #3b82f6;
+    --bs-btn-disabled-bg: #8b5cf6;
+    --bs-btn-disabled-border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .btn-outline-primary {
-    --bs-btn-color: #60a5fa;
-    --bs-btn-border-color: #3b82f6;
+    --bs-btn-color: #a78bfa;
+    --bs-btn-border-color: #8b5cf6;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #3b82f6;
-    --bs-btn-hover-border-color: #3b82f6;
-    --bs-btn-focus-shadow-rgb: 59, 130, 246;
+    --bs-btn-hover-bg: #8b5cf6;
+    --bs-btn-hover-border-color: #8b5cf6;
+    --bs-btn-focus-shadow-rgb: 139, 92, 246;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #3b82f6;
-    --bs-btn-active-border-color: #3b82f6;
+    --bs-btn-active-bg: #8b5cf6;
+    --bs-btn-active-border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .btn-outline-secondary {
@@ -74,13 +74,13 @@
 }
 
 [data-bs-theme="dark"] .page-item.active .page-link {
-    background-color: #3b82f6;
-    border-color: #3b82f6;
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .form-check-input:checked {
-    background-color: #3b82f6;
-    border-color: #3b82f6;
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .card {
@@ -136,7 +136,7 @@
 }
 
 html[data-bs-theme="dark"] .sidebar-menu .nav-link.active {
-    background-color: #3b82f6 !important;
+    background-color: #8b5cf6 !important;
     color: #fff !important;
 }
 
@@ -146,17 +146,17 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 }
 
 [data-bs-theme="dark"] .user-menu-header {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
 }
 
 [data-bs-theme="dark"] .user-menu-online-dot {
-    border-color: #1d4ed8;
+    border-color: #6d28d9;
 }
 
 [data-bs-theme="dark"] .user-menu-footer .btn-profile {
-    --bs-btn-color: #60a5fa;
-    --bs-btn-hover-bg: #3b82f6;
-    --bs-btn-hover-border-color: #3b82f6;
+    --bs-btn-color: #a78bfa;
+    --bs-btn-hover-bg: #8b5cf6;
+    --bs-btn-hover-border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .card-header {
@@ -182,12 +182,12 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 [data-bs-theme="dark"] .page-header-card::before,
 [data-bs-theme="dark"] .card-header-accent::before,
 [data-bs-theme="dark"] .dashboard-kpi-card::before {
-    background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 35%, #60a5fa 50%, #3b82f6 65%, #1d4ed8 100%);
+    background: linear-gradient(90deg, #6d28d9 0%, #8b5cf6 35%, #a78bfa 50%, #8b5cf6 65%, #6d28d9 100%);
 }
 
 [data-bs-theme="dark"] .page-header-icon {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.3);
 }
 
 [data-bs-theme="dark"] .page-header-title,
@@ -207,8 +207,8 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 
 [data-bs-theme="dark"] .card-header-accent-icon,
 [data-bs-theme="dark"] .dashboard-kpi-icon-primary {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
 
@@ -267,20 +267,20 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 }
 
 [data-bs-theme="dark"] .flatpickr-day.today {
-    border-color: #3b82f6;
+    border-color: #8b5cf6;
 }
 
 [data-bs-theme="dark"] .flatpickr-day.today:hover,
 [data-bs-theme="dark"] .flatpickr-day.today:focus {
-    background: #3b82f6;
+    background: #8b5cf6;
     color: #fff;
 }
 
 [data-bs-theme="dark"] .flatpickr-day.selected,
 [data-bs-theme="dark"] .flatpickr-day.selected:hover,
 [data-bs-theme="dark"] .flatpickr-day.selected:focus {
-    background: #3b82f6;
-    border-color: #3b82f6;
+    background: #8b5cf6;
+    border-color: #8b5cf6;
     color: #fff;
 }
 

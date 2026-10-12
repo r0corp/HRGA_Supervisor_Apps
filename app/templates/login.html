@@ -38,11 +38,11 @@
             inset: 0;
             z-index: -1;
             overflow: hidden;
-            background: radial-gradient(circle at 15% 15%, #16305e 0%, #0a1330 45%, #05070f 100%);
+            background: radial-gradient(circle at 15% 15%, #2e1065 0%, #140a30 45%, #05070f 100%);
         }
 
         :root[data-bs-theme="dark"] .login-tech-bg {
-            background: radial-gradient(circle at 15% 15%, #0f2147 0%, #081226 45%, #05070f 100%);
+            background: radial-gradient(circle at 15% 15%, #24104f 0%, #100826 45%, #05070f 100%);
         }
 
         .login-tech-bg::before {
@@ -50,8 +50,8 @@
             position: absolute;
             inset: -2px;
             background-image:
-                linear-gradient(rgba(96, 165, 250, 0.12) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(96, 165, 250, 0.12) 1px, transparent 1px);
+                linear-gradient(rgba(167, 139, 250, 0.12) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(167, 139, 250, 0.12) 1px, transparent 1px);
             background-size: 44px 44px;
             -webkit-mask-image: radial-gradient(ellipse at center, black 45%, transparent 85%);
             mask-image: radial-gradient(ellipse at center, black 45%, transparent 85%);
@@ -60,8 +60,8 @@
 
         :root[data-bs-theme="dark"] .login-tech-bg::before {
             background-image:
-                linear-gradient(rgba(96, 165, 250, 0.12) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(96, 165, 250, 0.12) 1px, transparent 1px);
+                linear-gradient(rgba(167, 139, 250, 0.12) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(167, 139, 250, 0.12) 1px, transparent 1px);
         }
 
         @keyframes loginGridPan {
@@ -77,13 +77,13 @@
             pointer-events: none;
         }
 
-        .login-glow-1 { width: 380px; height: 380px; top: -120px; left: -100px; background: #2563eb; animation: loginFloat1 13s ease-in-out infinite; }
-        .login-glow-2 { width: 320px; height: 320px; bottom: -120px; right: -80px; background: #06b6d4; animation: loginFloat2 15s ease-in-out infinite; }
+        .login-glow-1 { width: 380px; height: 380px; top: -120px; left: -100px; background: #7c3aed; animation: loginFloat1 13s ease-in-out infinite; }
+        .login-glow-2 { width: 320px; height: 320px; bottom: -120px; right: -80px; background: #a78bfa; animation: loginFloat2 15s ease-in-out infinite; }
         .login-glow-3 { width: 260px; height: 260px; bottom: 12%; left: 6%; background: #7c3aed; opacity: 0.3; animation: loginFloat3 17s ease-in-out infinite; }
 
-        :root[data-bs-theme="dark"] .login-glow-1 { background: #3b82f6; }
-        :root[data-bs-theme="dark"] .login-glow-2 { background: #06b6d4; }
-        :root[data-bs-theme="dark"] .login-glow-3 { background: #1d4ed8; }
+        :root[data-bs-theme="dark"] .login-glow-1 { background: #8b5cf6; }
+        :root[data-bs-theme="dark"] .login-glow-2 { background: #a78bfa; }
+        :root[data-bs-theme="dark"] .login-glow-3 { background: #6d28d9; }
 
         @keyframes loginFloat1 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(35px, 30px); } }
         @keyframes loginFloat2 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-30px, -25px); } }
@@ -139,12 +139,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: linear-gradient(160deg, #0d6efd 0%, #0a3fa3 100%);
+            background: linear-gradient(160deg, #7c3aed 0%, #4c1d95 100%);
             color: #fff;
         }
 
         :root[data-bs-theme="dark"] .login-brand-panel {
-            background: linear-gradient(160deg, #3b82f6 0%, #1e3a8a 100%);
+            background: linear-gradient(160deg, #8b5cf6 0%, #4c1d95 100%);
         }
 
         .login-brand-circle { position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.12); pointer-events: none; }
@@ -268,11 +268,11 @@
         }
 
         .login-input-group:focus-within .input-group-text {
-            border-color: #86b7fe;
+            border-color: #a78bfa;
         }
 
         :root[data-bs-theme="dark"] .login-input-group:focus-within .input-group-text {
-            border-color: #3b82f6;
+            border-color: #8b5cf6;
         }
 
         .login-password-toggle {
@@ -437,8 +437,8 @@
     function currentAccentColor() {
         var isDark = document.documentElement.getAttribute("data-bs-theme") === "dark";
         return {
-            dot: isDark ? "rgba(147, 197, 253, 0.85)" : "rgba(147, 197, 253, 0.85)",
-            line: isDark ? "96, 165, 250" : "96, 165, 250"
+            dot: isDark ? "rgba(196, 181, 253, 0.85)" : "rgba(196, 181, 253, 0.85)",
+            line: isDark ? "167, 139, 250" : "167, 139, 250"
         };
     }
 
