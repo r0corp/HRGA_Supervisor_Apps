@@ -45,7 +45,10 @@ $trigger = New-ScheduledTaskTrigger -Daily -At $Time
 
 # Jalan sebagai user server ini, juga saat tidak sedang login (S4U, tanpa
 # menyimpan password). S4U hanya bisa menulis ke folder lokal.
-$principal = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" -LogonType S4U
+# Nama akun diambil dari identitas Windows, bukan $env:USERDOMAIN: lewat
+# SSH variabel itu berisi "WORKGROUP" sehingga akun tidak ditemukan.
+$account = [Security.Principal.WindowsIdentity]::GetCurrent().Name
+$principal = New-ScheduledTaskPrincipal -UserId $account -LogonType S4U
 $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 1)
 
 Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger `
