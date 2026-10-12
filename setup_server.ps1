@@ -2,7 +2,7 @@
 # Aman dijalankan ulang: langkah yang sudah beres akan dilewati.
 #
 # Jalankan di PC server, PowerShell "Run as Administrator":
-#   Set-Location C:\Users\TCI-PC-010\weekly-report
+#   Set-Location C:\Users\TCI-PC-010\HRGA_Supervisor_Apps
 #   powershell -ExecutionPolicy Bypass -File .\setup_server.ps1
 
 param(

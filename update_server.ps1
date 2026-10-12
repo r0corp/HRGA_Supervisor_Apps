@@ -2,7 +2,7 @@
 # .env, database (instance\), venv\ dan logs\ TIDAK disentuh.
 #
 # Jalankan di PC server, PowerShell "Run as Administrator":
-#   Set-Location C:\Users\TCI-PC-010\weekly-report
+#   Set-Location C:\Users\TCI-PC-010\HRGA_Supervisor_Apps
 #   powershell -ExecutionPolicy Bypass -File .\update_server.ps1
 
 param(

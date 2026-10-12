@@ -1,5 +1,5 @@
 # Buat paket untuk dicopy ke PC server:
-#   dist\WeeklyReport-server.zip -> extract ke C:\Users\TCI-PC-010\weekly-report
+#   dist\HRGA_Supervisor_Apps-server.zip -> extract ke C:\Users\TCI-PC-010\HRGA_Supervisor_Apps
 #
 # Jalankan: powershell -ExecutionPolicy Bypass -File .\package_server.ps1
 #   -Excel "<path>"  ikut sertakan template Excel lama untuk diimpor otomatis
@@ -13,7 +13,7 @@ $ErrorActionPreference = "Stop"
 
 $root = $PSScriptRoot
 $dist = Join-Path $root "dist"
-$staging = Join-Path $env:TEMP "WeeklyReport-package"
+$staging = Join-Path $env:TEMP "HRGA_Supervisor_Apps-package"
 
 Remove-Item -Recurse -Force $staging -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force $dist, $staging | Out-Null
@@ -33,7 +33,7 @@ if ($Excel) {
 
 Get-ChildItem $staging -Recurse -Directory -Filter "__pycache__" | Remove-Item -Recurse -Force
 
-$zip = Join-Path $dist "WeeklyReport-server.zip"
+$zip = Join-Path $dist "HRGA_Supervisor_Apps-server.zip"
 Compress-Archive -Path (Join-Path $staging "*") -DestinationPath $zip -Force
 
 Remove-Item -Recurse -Force $staging

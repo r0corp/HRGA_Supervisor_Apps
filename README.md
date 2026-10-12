@@ -32,10 +32,10 @@ Centang bisa diubah, teks bisa diedit sebelum disalin.
 ## Instalasi pertama di server
 
 1. Di laptop dev: `powershell -ExecutionPolicy Bypass -File .\package_server.ps1 -Excel "<path Weekly Report HRGA.xlsx>"`
-2. Extract `dist\WeeklyReport-server.zip` ke `C:\Users\TCI-PC-010\weekly-report`.
+2. Extract `dist\HRGA_Supervisor_Apps-server.zip` ke `C:\Users\TCI-PC-010\HRGA_Supervisor_Apps`.
 3. PowerShell **Run as Administrator** di server:
    ```
-   Set-Location C:\Users\TCI-PC-010\weekly-report
+   Set-Location C:\Users\TCI-PC-010\HRGA_Supervisor_Apps
    powershell -ExecutionPolicy Bypass -File .\setup_server.ps1
    ```
    Catat password `it` dan `spv.hrga` yang tampil sekali di layar.
