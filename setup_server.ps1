@@ -7,7 +7,7 @@
 
 param(
     [int]$Port = 8400,
-    [string]$ServiceName = "WeeklyReportHRGA",
+    [string]$ServiceName = "HRGA_Supervisor_Apps",
     [string]$AdminName = "Abdul Rohman Ridwan",
     [string]$SpvName = "Supervisor HRGA"
 )

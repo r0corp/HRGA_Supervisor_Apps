@@ -11,7 +11,7 @@ param(
     [string]$Dest = "",
     [string]$Time = "19:00",
     [int]$Keep = 30,
-    [string]$TaskName = "WeeklyReportHRGA Backup"
+    [string]$TaskName = "HRGA_Supervisor_Apps Backup"
 )
 
 $ErrorActionPreference = "Stop"

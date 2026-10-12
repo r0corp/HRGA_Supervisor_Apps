@@ -6,7 +6,7 @@ issue & action plan diisi di aplikasi; dashboard mingguan dihitung otomatis dan
 halaman **Report WA** menyusun teks "Action Plan Recruitment - Week n" siap salin
 ke WhatsApp.
 
-- Server: `http://192.168.120.229:8400` (service Windows `WeeklyReportHRGA`)
+- Server: `http://192.168.120.229:8400` (service Windows `HRGA_Supervisor_Apps`, backup terjadwal `HRGA_Supervisor_Apps Backup`)
 - Stack: Flask + SQLite + waitress, tampilan Legal Contract (header kartu & tabel hitam)
 - Database: `instance\weekly.db`
 

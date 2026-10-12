@@ -6,7 +6,7 @@
 #   powershell -ExecutionPolicy Bypass -File .\update_server.ps1
 
 param(
-    [string]$ServiceName = "WeeklyReportHRGA",
+    [string]$ServiceName = "HRGA_Supervisor_Apps",
     [int]$Port = 8400
 )
 
