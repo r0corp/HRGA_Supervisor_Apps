@@ -88,14 +88,14 @@
 }
 
 [data-bs-theme="dark"] .card-header .btn-primary {
-    --bs-btn-color: #111418;
-    --bs-btn-hover-color: #111418;
+    --bs-btn-color: #6d28d9;
+    --bs-btn-hover-color: #6d28d9;
 }
 
 @media screen {
     [data-bs-theme="dark"] thead,
     [data-bs-theme="dark"] .table-light {
-        background: linear-gradient(135deg, #2c313b 0%, #0d0f13 100%) !important;
+        background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%) !important;
     }
 }
 
@@ -160,7 +160,7 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 }
 
 [data-bs-theme="dark"] .card-header {
-    background: linear-gradient(135deg, #2c313b 0%, #0d0f13 100%) !important;
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%) !important;
 }
 
 /* Header "Putus kontrak" tetap beda dari header biasa (yang di dark
@@ -303,20 +303,20 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
    ============================================================ */
 
 [data-bs-theme="dark"] .card-header-accent::before {
-    background: linear-gradient(90deg, #0d0f13 0%, #3a3f4b 35%, #6c757d 50%, #3a3f4b 65%, #0d0f13 100%);
+    background: linear-gradient(90deg, #6d28d9 0%, #8b5cf6 35%, #a78bfa 50%, #8b5cf6 65%, #6d28d9 100%);
 }
 
 [data-bs-theme="dark"] .card-header-accent-icon {
-    background: linear-gradient(135deg, #3a3f4b 0%, #0d0f13 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 [data-bs-theme="dark"] .mini-bar > span {
-    background: #adb5bd;
+    background: #a78bfa;
 }
 
 [data-bs-theme="dark"] .mini-bar.bar-alt > span {
-    background: #6c757d;
+    background: #6d28d9;
 }
 
 [data-bs-theme="dark"] .motivation-card,
@@ -330,6 +330,6 @@ html[data-bs-theme="dark"] .sidebar-menu .nav-link.active p {
 }
 
 [data-bs-theme="dark"] .card .list-group-item.active {
-    background-color: #3a3f4b;
-    border-color: #3a3f4b;
+    background-color: #6d28d9;
+    border-color: #6d28d9;
 }

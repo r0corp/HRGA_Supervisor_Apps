@@ -129,16 +129,15 @@ a {
 
 
 /* ============================================================
-   HEADER KARTU - Weekly Report: isi kartu (header kartu, header
-   kolom tabel, teks/link daftar) HITAM, bukan biru seperti Legal
-   Contract. Aksen biru tetap untuk navbar, sidebar, tombol.
+   HEADER KARTU - header kartu & header kolom tabel memakai gradient
+   ungu HRGA (#7C3AED -> #5B21B6), seragam dengan aksen lainnya.
    ============================================================ */
 
 .card-header {
     border-bottom: none;
     color: #fff;
     font-weight: 600;
-    background: linear-gradient(135deg, #343a40 0%, #111418 100%) !important;
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%) !important;
 }
 
 .card-header h1, .card-header h2, .card-header h3,
@@ -179,10 +178,10 @@ a {
 }
 
 .card-header .btn-primary {
-    --bs-btn-color: #212529;
+    --bs-btn-color: #5b21b6;
     --bs-btn-bg: #fff;
     --bs-btn-border-color: #fff;
-    --bs-btn-hover-color: #212529;
+    --bs-btn-hover-color: #5b21b6;
     --bs-btn-hover-bg: #e9ecef;
     --bs-btn-hover-border-color: #e9ecef;
 }
@@ -201,7 +200,7 @@ a {
 @media screen {
     thead,
     .table-light {
-        background: linear-gradient(135deg, #343a40 0%, #111418 100%) !important;
+        background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%) !important;
     }
 
     thead th,
@@ -523,7 +522,7 @@ html:not([data-bs-theme="dark"]) .sidebar-menu .nav-link.active p {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #111418 0%, #343a40 35%, #6c757d 50%, #343a40 65%, #111418 100%);
+    background: linear-gradient(90deg, #5b21b6 0%, #7c3aed 35%, #a78bfa 50%, #7c3aed 65%, #5b21b6 100%);
 }
 
 .card-header-accent-left {
@@ -543,8 +542,8 @@ html:not([data-bs-theme="dark"]) .sidebar-menu .nav-link.active p {
     justify-content: center;
     font-size: 17px;
     color: #fff;
-    background: linear-gradient(135deg, #343a40 0%, #111418 100%);
-    box-shadow: 0 4px 12px rgba(17, 20, 24, 0.28);
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.28);
 }
 
 .card-header-accent-title {
@@ -905,7 +904,7 @@ html:not([data-bs-theme="dark"]) .sidebar-menu .nav-link.active p {
    KHUSUS WEEKLY REPORT
    ============================================================ */
 
-/* Isi daftar di dalam kartu hitam, bukan biru (link nama/posisi di
+/* Teks daftar di dalam kartu tetap warna teks biasa (link nama/posisi di
    tabel & list-group). */
 .card .table a:not(.btn),
 .card .list-group-item-action,
@@ -1017,11 +1016,11 @@ html:not([data-bs-theme="dark"]) .sidebar-menu .nav-link.active p {
     display: block;
     height: 100%;
     border-radius: 4px;
-    background: #343a40;
+    background: #7c3aed;
 }
 
 .mini-bar.bar-alt > span {
-    background: #6c757d;
+    background: #a78bfa;
 }
 
 .section-title {
@@ -1113,7 +1112,7 @@ html:not([data-bs-theme="dark"]) .sidebar-menu .nav-link.active p {
 }
 
 .card .list-group-item.active {
-    background-color: #212529;
-    border-color: #212529;
+    background-color: #7c3aed;
+    border-color: #7c3aed;
     color: #fff;
 }
