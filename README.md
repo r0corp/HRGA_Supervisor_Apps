@@ -1,4 +1,4 @@
-# Weekly Report HRGA
+# HRGA Supervisor Apps (Weekly Report HRGA)
 
 Pengganti template Excel "Weekly Report HRGA.xlsx" milik Supervisor HRGA:
 data rekrutmen, onboarding, head count, kegiatan GA, scrap, site project, dan

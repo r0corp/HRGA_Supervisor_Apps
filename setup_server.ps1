@@ -1,4 +1,4 @@
-# Setup Weekly Report HRGA di PC server - cukup dijalankan SEKALI.
+# Setup HRGA Supervisor Apps (Weekly Report HRGA) di PC server - cukup dijalankan SEKALI.
 # Aman dijalankan ulang: langkah yang sudah beres akan dilewati.
 #
 # Jalankan di PC server, PowerShell "Run as Administrator":
@@ -147,7 +147,7 @@ Start-Sleep -Seconds 3
 
 try {
     $code = (Invoke-WebRequest "http://127.0.0.1:$Port/login" -UseBasicParsing -TimeoutSec 10).StatusCode
-    Write-Host "`nSELESAI. Weekly Report HRGA berjalan (HTTP $code)." -ForegroundColor Green
+    Write-Host "`nSELESAI. HRGA Supervisor Apps berjalan (HTTP $code)." -ForegroundColor Green
     Write-Host "Buka dari komputer lain: http://192.168.120.229:$Port"
     Write-Host "Berikutnya: pasang backup harian -> powershell -ExecutionPolicy Bypass -File .\install_backup_task.ps1"
 } catch {

@@ -1,5 +1,5 @@
 """
-Menjalankan Weekly Report HRGA dengan waitress (server produksi).
+Menjalankan HRGA Supervisor Apps (Weekly Report HRGA) dengan waitress (server produksi).
 
 Dipasang di PC server yang sama dengan Asset Tracker (192.168.120.229).
 Port yang sudah dipakai: 8000 Asset Tracker, 8100 Remote Tracker,
@@ -26,6 +26,6 @@ app.config["DEBUG"] = False
 
 if __name__ == "__main__":
 
-    print(f"Weekly Report HRGA berjalan di http://{HOST}:{PORT}")
+    print(f"HRGA Supervisor Apps berjalan di http://{HOST}:{PORT}")
 
     serve(app, host=HOST, port=PORT, threads=4)
